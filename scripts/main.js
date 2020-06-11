@@ -95,16 +95,9 @@ function plotMap(states) {
 			}
 		},
 		colorAxis: {
-            min: 1,
-            type: 'logarithmic',
+            min: 0,
             minColor: '#ffcf40',
-            maxColor: '#000000',
-            stops: [
-                [0, '#ffcf40'],
-                [0.5, '#ffbf00'],
-				[0.75, '#bf9b30'],
-				[1, '#000000']
-            ]
+            maxColor: '#8b6508'
 		},
 		
 		exporting: {
@@ -114,7 +107,6 @@ function plotMap(states) {
 		legend: {
             layout: 'horizontal',
             borderWidth: 0,
-            backgroundColor: 'rgba(255,255,255,0.85)',
             floating: true,
             verticalAlign: 'top',
             y: 50
@@ -126,7 +118,6 @@ function plotMap(states) {
 		series: [{
 			data: states,
 			color: '#fcc201',
-			name: 'Number of Locations',
 			states: {
                 hover: {
 					color: '#ff0000',
@@ -140,7 +131,10 @@ function plotMap(states) {
 				style: {
 					textOutline: 0
 				}
-            }
+			},
+			tooltip: {
+				headerFormat: '{null}'
+			},
 		}]
 
 	})
