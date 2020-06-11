@@ -1,0 +1,20 @@
+{"fries": [{"Nutrient":"Calories", "Value": 510},
+                   {"Nutrient":"Total Fat", "Value": 24},
+                   {"Nutrient":"Sodium", "Value": 290}],
+
+ "bigmac": [{"Nutrient":"Calories", "Value": 530},
+              {"Nutrient":"Total Fat", "Value": 27},
+              {"Nutrient":"Sodium", "Value": 960}],
+
+ "snackwrap": [{"Nutrient":"Calories", "Value": 360},
+                 {"Nutrient":"Total Fat", "Value": 20},
+                 {"Nutrient":"Sodium", "Value": 810}],
+
+ "happymeal": [{"Nutrient":"Calories", "Value": 365},
+                 {"Nutrient":"Total Fat", "Value": 14},
+                 {"Nutrient":"Sodium", "Value": 560}],
+
+ "egg": [{"Nutrient":"Calories", "Value": 300},
+                  {"Nutrient":"Total Fat", "Value": 13},
+                  {"Nutrient":"Sodium", "Value": 750}]
+}
