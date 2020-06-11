@@ -90,7 +90,8 @@ function plotMap(states) {
 			text: 'Source: <a href="https://www.kaggle.com/kerneler/starter-mcdonald-s-locations-2678722e-c">kaggle.com</a>',
 			style: {
 				fontFamily: "Montserrat",
-				fontSize: "15px"
+				fontSize: "15px",
+				color: "black"
 			}
 		},
 		colorAxis: {
@@ -166,10 +167,6 @@ function plotYearSales(yearSales) {
 	Highcharts.chart("lineChart", {
 		chart: {
 			type: "line",
-			style: {
-				fontFamily: "Montserrat",
-				fontWeight: "bolder"
-			},
 			marginRight: 45,
 			marginLeft: 65,
 			marginBottom: 75
@@ -177,22 +174,25 @@ function plotYearSales(yearSales) {
 		title: {
 			text: 'Yearly Growth from 1994-2018',
 			style: {
-				fontWeight: "bold",
-				fontSize: "21px"
+				fontFamily: "Montserrat",
+				fontWeight: "bolder",
+				color: "black"
 			}
 		},
 		subtitle: {
 			text: 'Source: <a href="https://expandedramblings.com/index.php/mcdonalds-statistics/">expandedramblings.com</a>',
 			style: {
 				fontFamily: "Montserrat",
-				fontSize: "15px"
+				fontSize: "15px",
+				color: "black"
 			}
 		},
 		xAxis: {
 			labels: {
 				style: {
 					fontSize: "12px",
-					fontFamily: "Montserrat"
+					fontFamily: "Montserrat",
+					color: "black"
 				},
 			},
 			tickInterval: 1,
@@ -229,7 +229,8 @@ function plotYearSales(yearSales) {
 				align: 'middle',
 				style: {
 					fontFamily: "Montserrat",
-					fontWeight: "bold"
+					fontWeight: "bold",
+					color: "black"
 				}
 			},
 			lineColor: "#a9a9a9",
@@ -294,7 +295,8 @@ function plotPieChart(item) {
 			text: "Calories",
 			style: {
 				fontFamily: "Montserrat",
-				fontWeight: "bolder"
+				fontWeight: "bolder",
+				color: "black"
 			}
 		},
 		exporting: {
@@ -359,7 +361,8 @@ function plotPieChart(item) {
 			text: "Total Fat",
 			style: {
 				fontFamily: "Montserrat",
-				fontWeight: "bolder"
+				fontWeight: "bolder",
+				color: "black"
 			}
 		},
 		exporting: {
@@ -424,7 +427,8 @@ function plotPieChart(item) {
 			text: "Sodium",
 			style: {
 				fontFamily: "Montserrat",
-				fontWeight: "bolder"
+				fontWeight: "bolder",
+				color: "black"
 			}
 		},
 		exporting: {
@@ -492,14 +496,16 @@ function plotBar() {
 			text: "McDonald's Menu Categories",
 			style: {
 				fontFamily: "Montserrat",
-				fontWeight: "bolder"
+				fontWeight: "bolder",
+				color: "black"
 			}
 		},
 		subtitle: {
 			text: 'Source: <a href="https://www.kaggle.com/mcdonalds/nutrition-facts">kaggle.com</a>',
 			style: {
 				fontFamily: "Montserrat",
-				fontSize: "15px"
+				fontSize: "15px",
+				color: "black"
 			}
 		},
 		xAxis: {
@@ -507,7 +513,8 @@ function plotBar() {
 				text: "McDonald's Item Categories",
 				style: {
 					fontFamily: "Montserrat",
-					fontWeight: "bolder"
+					fontWeight: "bolder",
+					color: "black"
 				}
 			},
 			categories: [
@@ -529,7 +536,8 @@ function plotBar() {
 				text: 'Number of Items',
 				style: {
 					fontFamily: "Montserrat",
-					fontWeight: "bolder"
+					fontWeight: "bolder",
+					color: "black"
 				}
 			}
 		},
@@ -554,6 +562,5 @@ function plotBar() {
 		}]
 	})
 }
-
 
 document.addEventListener('DOMContentLoaded', init, false);
