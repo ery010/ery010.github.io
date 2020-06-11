@@ -31,6 +31,7 @@ a {
     text-align: center;
     font-size: 15px;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -86,7 +87,7 @@ b {
 
 .grid-item {
     text-align: center;
-    min-width: "75%";
+    min-width: 75%;
     margin-top: 10px;
 }
 
@@ -105,7 +106,6 @@ b {
 }
 
 .btn {
-    border: 1 solid;
     outline: 2px solid;
     outline-color: rgba(255, 255, 255, .5);
     outline-offset: 0px;
