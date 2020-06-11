@@ -96,14 +96,14 @@ function plotMap(states) {
 		},
 		colorAxis: {
             min: 1,
-            type: 'linear',
+            type: 'logarithmic',
             minColor: '#ffcf40',
-            maxColor: '#a67c00',
+            maxColor: '#000000',
             stops: [
                 [0, '#ffcf40'],
                 [0.5, '#ffbf00'],
 				[0.75, '#bf9b30'],
-				[1, '#a67c00']
+				[1, '#000000']
             ]
 		},
 		
@@ -132,10 +132,6 @@ function plotMap(states) {
 					color: '#ff0000',
 					
                 }
-			},
-			tooltip: {
-				pointFormat: '{point.value}'
-
 			},
 			dataLabels: {
                 enabled: true,
@@ -200,7 +196,8 @@ function plotYearSales(yearSales) {
 				text: "Year",
 				style: {
 					fontFamily: "Montserrat",
-					fontWeight: "bold"
+					fontWeight: "bold",
+					color: "black"
 				}
 			},
 			tooltip: {
@@ -252,6 +249,13 @@ function plotYearSales(yearSales) {
 			gridLineDashStyle: "ShortDash",
 			gridLineColor: "#dcdcdc"
 		},
+		legend: {
+			enabled: true,
+			align: "center",
+			borderWidth: 0,
+			verticalAlign: "top",
+			symbolRadius: 0,
+		},
 		plotOptions: {
 			areaspline: {
 				color: "#00bfff",
@@ -266,9 +270,9 @@ function plotYearSales(yearSales) {
 		},
 		series: [{
 			data: totalByYear,
-			name: "Total Stores",
+			name: "Total Locations Worldwide",
 			color: "#a67c00",
-			showInLegend: false,
+			showInLegend: true,
 			tooltip: {
 				pointFormat: '{point.y}',
 				headerFormat: '{null}'
